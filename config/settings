@@ -1,0 +1,5 @@
+<?php
+
+return [
+    'default_file_path' => base_path().'/public/data.csv'
+];
