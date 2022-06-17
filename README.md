@@ -21,6 +21,17 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Project Setup Steps
+
+- Install PHP with version 7.*
+- Install Composer using this link https://getcomposer.org/download/
+- Clone the Project by using git
+	- git clone https://github.com/Mallikarjundemogreeniitproject/backend.git
+	- Once the Project is clone then execute the command composer install for dependency packages
+	- replace the file .env.example with .env in project folder
+	- Run the command php artisan serve in command prompt for executing the project
+	- Run the command php artisan test for unit and feature test
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
