@@ -16,7 +16,7 @@ class OrderFactory extends Factory
         return [
             'name'         => $this->faker->name(),
             'state'       => $this->faker->name(),
-            'zip'       => $this->faker->zipcode(),
+            'zip'       => $this->faker->name(),
             'amount'       => random_int(0, 11),
             'qty'       => random_int(0, 2),
             'item'       => $this->faker->name(),

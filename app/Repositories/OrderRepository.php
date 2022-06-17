@@ -71,7 +71,7 @@ class OrderRepository implements OrderRepositoryInterface
         try {
          	$status = Order::create($orderDetails);
          	DB::commit();
-            $this->createCSVFile();
+            OrderRepository::createCSVFile();
         } catch (\Exception $e) {
             DB::rollback();
         }
@@ -175,7 +175,7 @@ class OrderRepository implements OrderRepositoryInterface
      *
      */
     public function createCSVFile(){
-    	$getAllOrders = $this->getAllOrders();
+    	$getAllOrders = Order::all();
     	$status = false;
     	$data[] = ['id', 'name','state','zip','amount','qty','item'];
     	foreach ($getAllOrders as $fields) {

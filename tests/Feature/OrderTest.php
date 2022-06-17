@@ -185,4 +185,16 @@ class OrderTest extends TestCase
             ->assertStatus(404);
     }
 
+    /**
+     * A functional success test for that record is present in the DB Table.
+     *
+     * @return void
+     */
+    public function test_can_database_has_records()
+    {
+        $this->assertDatabaseHas('orders', [
+            'name' => 'Mallikarjun'
+        ]);
+    }
+
 }
