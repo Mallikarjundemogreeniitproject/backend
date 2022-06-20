@@ -5,6 +5,7 @@
 - Create a new folder and clone the project using below steps
 - Clone the Project by using git
 	- git clone https://github.com/Mallikarjundemogreeniitproject/backend.git
+	- switch to "master" branch using command as "git checkout master"
 	- Once the Project is clone then execute the command "composer install" for installing dependency packages for the project
 	- rename the file .env.example with .env in project folder (I have defined the mysql details )
 	- Run the command "php artisan key:generate" to generate the new key for project
